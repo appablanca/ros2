@@ -1,0 +1,19 @@
+[0.698s] Invoking command in '/home/feyzieren/ros2_ws/build/my_py_pkg': PYTHONPATH=/home/feyzieren/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/feyzieren/ros2_ws/build/my_py_pkg/build --no-deps symlink_data
+[0.992s] running develop
+[0.992s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.993s]   warnings.warn(
+[1.180s] running egg_info
+[1.181s] writing my_py_pkg.egg-info/PKG-INFO
+[1.181s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[1.181s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[1.181s] writing requirements to my_py_pkg.egg-info/requires.txt
+[1.182s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[1.183s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[1.184s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[1.185s] running build_ext
+[1.185s] Creating /home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[1.186s] Installing py_node script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.186s] 
+[1.186s] Installed /home/feyzieren/ros2_ws/build/my_py_pkg
+[1.187s] running symlink_data
+[1.218s] Invoked command in '/home/feyzieren/ros2_ws/build/my_py_pkg' returned '0': PYTHONPATH=/home/feyzieren/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/feyzieren/ros2_ws/build/my_py_pkg/build --no-deps symlink_data

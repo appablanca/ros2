@@ -1,0 +1,10 @@
+/home/feyzieren/ros2_ws/build/CMakeFiles/uninstall.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/my_cpp_pkg_uninstall.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/cpp_node.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/test.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/edit_cache.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/rebuild_cache.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/list_install_components.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/install.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/install/local.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/install/strip.dir
