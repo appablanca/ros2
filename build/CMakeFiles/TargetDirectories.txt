@@ -1,6 +1,8 @@
 /home/feyzieren/ros2_ws/build/CMakeFiles/uninstall.dir
 /home/feyzieren/ros2_ws/build/CMakeFiles/my_cpp_pkg_uninstall.dir
 /home/feyzieren/ros2_ws/build/CMakeFiles/cpp_node.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/robot_news_station.dir
+/home/feyzieren/ros2_ws/build/CMakeFiles/smartphone.dir
 /home/feyzieren/ros2_ws/build/CMakeFiles/test.dir
 /home/feyzieren/ros2_ws/build/CMakeFiles/edit_cache.dir
 /home/feyzieren/ros2_ws/build/CMakeFiles/rebuild_cache.dir

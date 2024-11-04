@@ -1,0 +1,190 @@
+[0.000000] (-) TimerEvent: {}
+[0.000922] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.001017] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict()}
+[0.001154] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.007772] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[0.019656] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.020487] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.021302] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/feyzieren/ros2_ws/build/my_cpp_pkg', '--', '-j12', '-l12'], 'cwd': '/home/feyzieren/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'feyzieren'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/feyzieren'), ('OLDPWD', '/home/feyzieren'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '1062'), ('SYSTEMD_EXEC_PID', '1412'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3467'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/feyzieren/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'feyzieren'), ('JOURNAL_STREAM', '8:10949'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'feyzieren'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/feyzieren-MS-7A38:@/tmp/.ICE-unix/1189,unix/feyzieren-MS-7A38:/tmp/.ICE-unix/1189'), ('INVOCATION_ID', '2884b0f1ed9748058f407d8ed7ed9f6c'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.20JHW2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/feyzieren/ros2_ws/install/my_py_pkg:/home/feyzieren/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:41d42a46-e103-400c-847e-9cdf9d2fd432'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/feyzieren/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/feyzieren/ros2_ws/install/my_cpp_pkg:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.058914] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099389] (-) TimerEvent: {}
+[0.199939] (-) TimerEvent: {}
+[0.235139] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.281849] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.286118] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.296835] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.299995] (-) TimerEvent: {}
+[0.314158] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.336595] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.379686] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.381381] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400137] (-) TimerEvent: {}
+[0.500677] (-) TimerEvent: {}
+[0.532148] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.596534] (my_cpp_pkg) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[0.600741] (-) TimerEvent: {}
+[0.701068] (-) TimerEvent: {}
+[0.733377] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.756185] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.758616] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/feyzieren/ros2_ws/build/my_cpp_pkg\n'}
+[0.797009] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node\x1b[0m\n'}
+[0.797650] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_news_station\x1b[0m\n'}
+[0.801188] (-) TimerEvent: {}
+[0.814167] (my_cpp_pkg) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/smartphone.dir/src/smartphone.cpp.o\x1b[0m\n'}
+[0.828485] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target robot_news_station\n'}
+[0.832311] (my_cpp_pkg) StdoutLine: {'line': b'[ 83%] Built target cpp_node\n'}
+[0.899734] (my_py_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_py_pkg', 'build', '--build-base', '/home/feyzieren/ros2_ws/build/my_py_pkg/build', 'install', '--record', '/home/feyzieren/ros2_ws/build/my_py_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/feyzieren/ros2_ws/src/my_py_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'feyzieren', 'LC_TIME': 'tr_TR.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/feyzieren', 'OLDPWD': '/home/feyzieren', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'tr_TR.UTF-8', 'MANAGERPID': '1062', 'SYSTEMD_EXEC_PID': '1412', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3467', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/feyzieren/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'feyzieren', 'JOURNAL_STREAM': '8:10949', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'feyzieren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/feyzieren-MS-7A38:@/tmp/.ICE-unix/1189,unix/feyzieren-MS-7A38:/tmp/.ICE-unix/1189', 'INVOCATION_ID': '2884b0f1ed9748058f407d8ed7ed9f6c', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'tr_TR.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'tr_TR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.20JHW2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/feyzieren/ros2_ws/install/my_py_pkg:/home/feyzieren/ros2_ws/install/my_cpp_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'tr_TR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:41d42a46-e103-400c-847e-9cdf9d2fd432', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'tr_TR.UTF-8', 'LC_IDENTIFICATION': 'tr_TR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/feyzieren/ros2_ws/build/my_py_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/feyzieren/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'tr_TR.UTF-8', 'LC_PAPER': 'tr_TR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/feyzieren/ros2_ws/install/my_cpp_pkg'}, 'shell': False}
+[0.903336] (-) TimerEvent: {}
+[1.003611] (-) TimerEvent: {}
+[1.104013] (-) TimerEvent: {}
+[1.204547] (-) TimerEvent: {}
+[1.216251] (my_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.217321] (my_py_pkg) StdoutLine: {'line': b'writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO\n'}
+[1.217678] (my_py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt\n'}
+[1.217981] (my_py_pkg) StdoutLine: {'line': b'writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt\n'}
+[1.218290] (my_py_pkg) StdoutLine: {'line': b'writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt\n'}
+[1.218642] (my_py_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt\n'}
+[1.220550] (my_py_pkg) StdoutLine: {'line': b"reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.221445] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.221722] (my_py_pkg) StdoutLine: {'line': b'running build\n'}
+[1.221901] (my_py_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.222127] (my_py_pkg) StdoutLine: {'line': b'running install\n'}
+[1.222498] (my_py_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.223828] (my_py_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.224242] (my_py_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.225744] (my_py_pkg) StdoutLine: {'line': b"removing '/home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.226169] (my_py_pkg) StdoutLine: {'line': b'Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info\n'}
+[1.227620] (my_py_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.255811] (my_py_pkg) StdoutLine: {'line': b'Installing py_node script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[1.256263] (my_py_pkg) StdoutLine: {'line': b'Installing robot_news_station script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[1.256481] (my_py_pkg) StdoutLine: {'line': b'Installing smartphone script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[1.256761] (my_py_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/feyzieren/ros2_ws/build/my_py_pkg/install.log'\n"}
+[1.295691] (my_py_pkg) CommandEnded: {'returncode': 0}
+[1.304817] (-) TimerEvent: {}
+[1.316002] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 0}
+[1.404969] (-) TimerEvent: {}
+[1.505492] (-) TimerEvent: {}
+[1.606008] (-) TimerEvent: {}
+[1.706492] (-) TimerEvent: {}
+[1.806981] (-) TimerEvent: {}
+[1.907351] (-) TimerEvent: {}
+[2.007798] (-) TimerEvent: {}
+[2.108315] (-) TimerEvent: {}
+[2.208700] (-) TimerEvent: {}
+[2.309149] (-) TimerEvent: {}
+[2.409874] (-) TimerEvent: {}
+[2.510845] (-) TimerEvent: {}
+[2.611256] (-) TimerEvent: {}
+[2.711675] (-) TimerEvent: {}
+[2.812145] (-) TimerEvent: {}
+[2.912743] (-) TimerEvent: {}
+[3.013220] (-) TimerEvent: {}
+[3.113627] (-) TimerEvent: {}
+[3.214098] (-) TimerEvent: {}
+[3.314716] (-) TimerEvent: {}
+[3.415038] (-) TimerEvent: {}
+[3.515454] (-) TimerEvent: {}
+[3.615841] (-) TimerEvent: {}
+[3.716287] (-) TimerEvent: {}
+[3.816831] (-) TimerEvent: {}
+[3.917320] (-) TimerEvent: {}
+[4.017746] (-) TimerEvent: {}
+[4.118220] (-) TimerEvent: {}
+[4.218696] (-) TimerEvent: {}
+[4.319123] (-) TimerEvent: {}
+[4.419565] (-) TimerEvent: {}
+[4.520074] (-) TimerEvent: {}
+[4.620506] (-) TimerEvent: {}
+[4.720884] (-) TimerEvent: {}
+[4.821254] (-) TimerEvent: {}
+[4.921600] (-) TimerEvent: {}
+[5.022003] (-) TimerEvent: {}
+[5.122585] (-) TimerEvent: {}
+[5.222995] (-) TimerEvent: {}
+[5.323557] (-) TimerEvent: {}
+[5.424212] (-) TimerEvent: {}
+[5.524675] (-) TimerEvent: {}
+[5.625132] (-) TimerEvent: {}
+[5.725714] (-) TimerEvent: {}
+[5.826348] (-) TimerEvent: {}
+[5.926976] (-) TimerEvent: {}
+[6.027405] (-) TimerEvent: {}
+[6.127872] (-) TimerEvent: {}
+[6.228387] (-) TimerEvent: {}
+[6.328866] (-) TimerEvent: {}
+[6.429249] (-) TimerEvent: {}
+[6.529599] (-) TimerEvent: {}
+[6.629995] (-) TimerEvent: {}
+[6.730360] (-) TimerEvent: {}
+[6.830697] (-) TimerEvent: {}
+[6.931203] (-) TimerEvent: {}
+[7.031876] (-) TimerEvent: {}
+[7.132462] (-) TimerEvent: {}
+[7.233071] (-) TimerEvent: {}
+[7.333614] (-) TimerEvent: {}
+[7.434108] (-) TimerEvent: {}
+[7.534652] (-) TimerEvent: {}
+[7.635115] (-) TimerEvent: {}
+[7.735620] (-) TimerEvent: {}
+[7.836101] (-) TimerEvent: {}
+[7.936629] (-) TimerEvent: {}
+[8.037114] (-) TimerEvent: {}
+[8.137652] (-) TimerEvent: {}
+[8.238144] (-) TimerEvent: {}
+[8.338686] (-) TimerEvent: {}
+[8.439176] (-) TimerEvent: {}
+[8.539658] (-) TimerEvent: {}
+[8.640144] (-) TimerEvent: {}
+[8.740607] (-) TimerEvent: {}
+[8.841032] (-) TimerEvent: {}
+[8.941433] (-) TimerEvent: {}
+[9.041966] (-) TimerEvent: {}
+[9.142327] (-) TimerEvent: {}
+[9.242739] (-) TimerEvent: {}
+[9.343175] (-) TimerEvent: {}
+[9.443536] (-) TimerEvent: {}
+[9.543884] (-) TimerEvent: {}
+[9.644249] (-) TimerEvent: {}
+[9.744617] (-) TimerEvent: {}
+[9.844963] (-) TimerEvent: {}
+[9.945308] (-) TimerEvent: {}
+[10.045624] (-) TimerEvent: {}
+[10.145968] (-) TimerEvent: {}
+[10.246323] (-) TimerEvent: {}
+[10.346691] (-) TimerEvent: {}
+[10.447019] (-) TimerEvent: {}
+[10.506762] (my_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable smartphone\x1b[0m\n'}
+[10.547116] (-) TimerEvent: {}
+[10.647428] (-) TimerEvent: {}
+[10.747772] (-) TimerEvent: {}
+[10.848120] (-) TimerEvent: {}
+[10.948506] (-) TimerEvent: {}
+[10.964248] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target smartphone\n'}
+[10.990198] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[11.040332] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[11.048577] (-) TimerEvent: {}
+[11.053447] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/feyzieren/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/feyzieren/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'feyzieren'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/feyzieren'), ('OLDPWD', '/home/feyzieren'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '1062'), ('SYSTEMD_EXEC_PID', '1412'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3467'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/feyzieren/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'feyzieren'), ('JOURNAL_STREAM', '8:10949'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'feyzieren'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/feyzieren-MS-7A38:@/tmp/.ICE-unix/1189,unix/feyzieren-MS-7A38:/tmp/.ICE-unix/1189'), ('INVOCATION_ID', '2884b0f1ed9748058f407d8ed7ed9f6c'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.20JHW2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/feyzieren/ros2_ws/install/my_py_pkg:/home/feyzieren/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:41d42a46-e103-400c-847e-9cdf9d2fd432'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/feyzieren/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/feyzieren/ros2_ws/install/my_cpp_pkg:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[11.062947] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.063491] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node\n'}
+[11.063887] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station\n'}
+[11.064275] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone\n'}
+[11.071263] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone" to ""\n'}
+[11.071759] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[11.072174] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[11.072543] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[11.072929] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[11.073207] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[11.073518] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[11.073790] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[11.074056] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[11.074344] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[11.074740] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[11.075762] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[11.077766] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[11.078277] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[11.078740] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[11.079497] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[11.079894] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[11.148753] (-) TimerEvent: {}
+[11.164981] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[11.166705] (-) EventReactorShutdown: {}
