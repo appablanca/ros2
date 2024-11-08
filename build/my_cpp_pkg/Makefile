@@ -236,6 +236,143 @@ smartphone/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartphone.dir/build.make CMakeFiles/smartphone.dir/build
 .PHONY : smartphone/fast
 
+#=============================================================================
+# Target rules for targets named number_publisher
+
+# Build rule for target.
+number_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 number_publisher
+.PHONY : number_publisher
+
+# fast build rule for target.
+number_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_publisher.dir/build.make CMakeFiles/number_publisher.dir/build
+.PHONY : number_publisher/fast
+
+#=============================================================================
+# Target rules for targets named number_counter
+
+# Build rule for target.
+number_counter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 number_counter
+.PHONY : number_counter
+
+# fast build rule for target.
+number_counter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/build
+.PHONY : number_counter/fast
+
+#=============================================================================
+# Target rules for targets named add_two_ints_server
+
+# Build rule for target.
+add_two_ints_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 add_two_ints_server
+.PHONY : add_two_ints_server
+
+# fast build rule for target.
+add_two_ints_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/build
+.PHONY : add_two_ints_server/fast
+
+#=============================================================================
+# Target rules for targets named add_two_ints_client
+
+# Build rule for target.
+add_two_ints_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 add_two_ints_client
+.PHONY : add_two_ints_client
+
+# fast build rule for target.
+add_two_ints_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/build
+.PHONY : add_two_ints_client/fast
+
+#=============================================================================
+# Target rules for targets named add_two_ints_client_no_oop
+
+# Build rule for target.
+add_two_ints_client_no_oop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 add_two_ints_client_no_oop
+.PHONY : add_two_ints_client_no_oop
+
+# fast build rule for target.
+add_two_ints_client_no_oop/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/build
+.PHONY : add_two_ints_client_no_oop/fast
+
+src/add_two_ints_client.o: src/add_two_ints_client.cpp.o
+.PHONY : src/add_two_ints_client.o
+
+# target to build an object file
+src/add_two_ints_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o
+.PHONY : src/add_two_ints_client.cpp.o
+
+src/add_two_ints_client.i: src/add_two_ints_client.cpp.i
+.PHONY : src/add_two_ints_client.i
+
+# target to preprocess a source file
+src/add_two_ints_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.i
+.PHONY : src/add_two_ints_client.cpp.i
+
+src/add_two_ints_client.s: src/add_two_ints_client.cpp.s
+.PHONY : src/add_two_ints_client.s
+
+# target to generate assembly for a file
+src/add_two_ints_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.s
+.PHONY : src/add_two_ints_client.cpp.s
+
+src/add_two_ints_client_no_oop.o: src/add_two_ints_client_no_oop.cpp.o
+.PHONY : src/add_two_ints_client_no_oop.o
+
+# target to build an object file
+src/add_two_ints_client_no_oop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o
+.PHONY : src/add_two_ints_client_no_oop.cpp.o
+
+src/add_two_ints_client_no_oop.i: src/add_two_ints_client_no_oop.cpp.i
+.PHONY : src/add_two_ints_client_no_oop.i
+
+# target to preprocess a source file
+src/add_two_ints_client_no_oop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.i
+.PHONY : src/add_two_ints_client_no_oop.cpp.i
+
+src/add_two_ints_client_no_oop.s: src/add_two_ints_client_no_oop.cpp.s
+.PHONY : src/add_two_ints_client_no_oop.s
+
+# target to generate assembly for a file
+src/add_two_ints_client_no_oop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.s
+.PHONY : src/add_two_ints_client_no_oop.cpp.s
+
+src/add_two_ints_server.o: src/add_two_ints_server.cpp.o
+.PHONY : src/add_two_ints_server.o
+
+# target to build an object file
+src/add_two_ints_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o
+.PHONY : src/add_two_ints_server.cpp.o
+
+src/add_two_ints_server.i: src/add_two_ints_server.cpp.i
+.PHONY : src/add_two_ints_server.i
+
+# target to preprocess a source file
+src/add_two_ints_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.i
+.PHONY : src/add_two_ints_server.cpp.i
+
+src/add_two_ints_server.s: src/add_two_ints_server.cpp.s
+.PHONY : src/add_two_ints_server.s
+
+# target to generate assembly for a file
+src/add_two_ints_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.s
+.PHONY : src/add_two_ints_server.cpp.s
+
 src/my_first_node.o: src/my_first_node.cpp.o
 .PHONY : src/my_first_node.o
 
@@ -259,6 +396,54 @@ src/my_first_node.s: src/my_first_node.cpp.s
 src/my_first_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_node.dir/build.make CMakeFiles/cpp_node.dir/src/my_first_node.cpp.s
 .PHONY : src/my_first_node.cpp.s
+
+src/number_counter.o: src/number_counter.cpp.o
+.PHONY : src/number_counter.o
+
+# target to build an object file
+src/number_counter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/src/number_counter.cpp.o
+.PHONY : src/number_counter.cpp.o
+
+src/number_counter.i: src/number_counter.cpp.i
+.PHONY : src/number_counter.i
+
+# target to preprocess a source file
+src/number_counter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/src/number_counter.cpp.i
+.PHONY : src/number_counter.cpp.i
+
+src/number_counter.s: src/number_counter.cpp.s
+.PHONY : src/number_counter.s
+
+# target to generate assembly for a file
+src/number_counter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/src/number_counter.cpp.s
+.PHONY : src/number_counter.cpp.s
+
+src/number_publisher.o: src/number_publisher.cpp.o
+.PHONY : src/number_publisher.o
+
+# target to build an object file
+src/number_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_publisher.dir/build.make CMakeFiles/number_publisher.dir/src/number_publisher.cpp.o
+.PHONY : src/number_publisher.cpp.o
+
+src/number_publisher.i: src/number_publisher.cpp.i
+.PHONY : src/number_publisher.i
+
+# target to preprocess a source file
+src/number_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_publisher.dir/build.make CMakeFiles/number_publisher.dir/src/number_publisher.cpp.i
+.PHONY : src/number_publisher.cpp.i
+
+src/number_publisher.s: src/number_publisher.cpp.s
+.PHONY : src/number_publisher.s
+
+# target to generate assembly for a file
+src/number_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_publisher.dir/build.make CMakeFiles/number_publisher.dir/src/number_publisher.cpp.s
+.PHONY : src/number_publisher.cpp.s
 
 src/robot_news_station.o: src/robot_news_station.cpp.o
 .PHONY : src/robot_news_station.o
@@ -323,12 +508,32 @@ help:
 	@echo "... test"
 	@echo "... my_cpp_pkg_uninstall"
 	@echo "... uninstall"
+	@echo "... add_two_ints_client"
+	@echo "... add_two_ints_client_no_oop"
+	@echo "... add_two_ints_server"
 	@echo "... cpp_node"
+	@echo "... number_counter"
+	@echo "... number_publisher"
 	@echo "... robot_news_station"
 	@echo "... smartphone"
+	@echo "... src/add_two_ints_client.o"
+	@echo "... src/add_two_ints_client.i"
+	@echo "... src/add_two_ints_client.s"
+	@echo "... src/add_two_ints_client_no_oop.o"
+	@echo "... src/add_two_ints_client_no_oop.i"
+	@echo "... src/add_two_ints_client_no_oop.s"
+	@echo "... src/add_two_ints_server.o"
+	@echo "... src/add_two_ints_server.i"
+	@echo "... src/add_two_ints_server.s"
 	@echo "... src/my_first_node.o"
 	@echo "... src/my_first_node.i"
 	@echo "... src/my_first_node.s"
+	@echo "... src/number_counter.o"
+	@echo "... src/number_counter.i"
+	@echo "... src/number_counter.s"
+	@echo "... src/number_publisher.o"
+	@echo "... src/number_publisher.i"
+	@echo "... src/number_publisher.s"
 	@echo "... src/robot_news_station.o"
 	@echo "... src/robot_news_station.i"
 	@echo "... src/robot_news_station.s"

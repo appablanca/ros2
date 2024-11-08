@@ -1,5 +1,10 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.5)
 project(my_cpp_pkg)
+
+# Default to C++14
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -19,10 +24,31 @@ ament_target_dependencies(robot_news_station rclcpp example_interfaces)
 add_executable(smartphone src/smartphone.cpp)
 ament_target_dependencies(smartphone rclcpp example_interfaces)
 
+add_executable(number_publisher src/number_publisher.cpp)
+ament_target_dependencies(number_publisher rclcpp example_interfaces)
+
+add_executable(number_counter src/number_counter.cpp)
+ament_target_dependencies(number_counter rclcpp example_interfaces)
+
+add_executable(add_two_ints_server src/add_two_ints_server.cpp)
+ament_target_dependencies(add_two_ints_server rclcpp example_interfaces)
+
+add_executable(add_two_ints_client src/add_two_ints_client.cpp)
+ament_target_dependencies(add_two_ints_client rclcpp example_interfaces)
+
+add_executable(add_two_ints_client_no_oop src/add_two_ints_client_no_oop.cpp)
+ament_target_dependencies(add_two_ints_client_no_oop rclcpp example_interfaces)
+
 install(TARGETS
-  cpp_node 
+  cpp_node
   robot_news_station
   smartphone
+  number_publisher
+  number_counter
+  add_two_ints_server
+  add_two_ints_client
+  add_two_ints_client_no_oop
   DESTINATION lib/${PROJECT_NAME}
 )
+
 ament_package()

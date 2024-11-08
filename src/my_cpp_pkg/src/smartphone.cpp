@@ -6,12 +6,14 @@ class SmartphoneNode : public rclcpp::Node
 public:
     SmartphoneNode() : Node("smartphone")
     {
-        subscriber_ = this->create_subscription<example_interfaces::msg::String>("robot_news", 10, std::bind(&SmartphoneNode::callback_news, this, std::placeholders::_1));
-        RCLCPP_INFO(this->get_logger(), "cpp smarthpone is listening");
+        subscriber_ = this->create_subscription<example_interfaces::msg::String>(
+            "robot_news", 10,
+            std::bind(&SmartphoneNode::callbackRobotNews, this, std::placeholders::_1));
+        RCLCPP_INFO(this->get_logger(), "Smartphone has been started.");
     }
 
 private:
-    void callback_news(const example_interfaces::msg::String::SharedPtr msg)
+    void callbackRobotNews(const example_interfaces::msg::String::SharedPtr msg)
     {
         RCLCPP_INFO(this->get_logger(), "%s", msg->data.c_str());
     }
@@ -25,5 +27,5 @@ int main(int argc, char **argv)
     auto node = std::make_shared<SmartphoneNode>();
     rclcpp::spin(node);
     rclcpp::shutdown();
-    return 1;
+    return 0;
 }
