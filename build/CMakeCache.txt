@@ -271,7 +271,7 @@ SITE:STRING=feyzieren-MS-7A38
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libexample_interfaces__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/feyzieren/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
@@ -398,6 +398,9 @@ my_cpp_pkg_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 my_cpp_pkg_SOURCE_DIR:STATIC=/home/feyzieren/ros2_ws/src/my_cpp_pkg
+
+//The directory containing a CMake configuration file for my_robot_interfaces.
+my_robot_interfaces_DIR:PATH=/home/feyzieren/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so

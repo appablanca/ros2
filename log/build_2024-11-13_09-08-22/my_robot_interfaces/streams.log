@@ -1,0 +1,30 @@
+[0.359s] Invoking command in '/home/feyzieren/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/feyzieren/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/feyzieren/ros2_ws/install/my_robot_interfaces
+[0.505s] -- The C compiler identification is GNU 11.4.0
+[0.635s] -- The CXX compiler identification is GNU 11.4.0
+[0.649s] -- Detecting C compiler ABI info
+[0.756s] -- Detecting C compiler ABI info - done
+[0.769s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.770s] -- Detecting C compile features
+[0.771s] -- Detecting C compile features - done
+[0.776s] -- Detecting CXX compiler ABI info
+[0.931s] -- Detecting CXX compiler ABI info - done
+[0.944s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.945s] -- Detecting CXX compile features
+[0.945s] -- Detecting CXX compile features - done
+[0.970s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.318s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.479s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.488s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.502s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.597s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.207s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:229 (message):
+[2.207s]   Packages installing interfaces must include
+[2.207s]   '<member_of_group>rosidl_interface_packages</member_of_group>' in their
+[2.207s]   package.xml
+[2.207s] Call Stack (most recent call first):
+[2.208s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[2.208s] 
+[2.208s] [0m
+[2.208s] -- Configuring incomplete, errors occurred!
+[2.208s] See also "/home/feyzieren/ros2_ws/build/my_robot_interfaces/CMakeFiles/CMakeOutput.log".
+[2.220s] Invoked command in '/home/feyzieren/ros2_ws/build/my_robot_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/feyzieren/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/feyzieren/ros2_ws/install/my_robot_interfaces

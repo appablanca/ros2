@@ -14,6 +14,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(example_interfaces REQUIRED)
+find_package(my_robot_interfaces REQUIRED)
 
 add_executable(cpp_node src/my_first_node.cpp)
 ament_target_dependencies(cpp_node rclcpp)
@@ -36,8 +37,14 @@ ament_target_dependencies(add_two_ints_server rclcpp example_interfaces)
 add_executable(add_two_ints_client src/add_two_ints_client.cpp)
 ament_target_dependencies(add_two_ints_client rclcpp example_interfaces)
 
-add_executable(add_two_ints_client_no_oop src/add_two_ints_client_no_oop.cpp)
-ament_target_dependencies(add_two_ints_client_no_oop rclcpp example_interfaces)
+add_executable(hardware_status_publisher src/hw_status_publisher.cpp)
+ament_target_dependencies(hardware_status_publisher rclcpp my_robot_interfaces)
+
+add_executable(led_panel src/led_panel.cpp)
+ament_target_dependencies(led_panel rclcpp my_robot_interfaces)
+
+add_executable(battery src/battery.cpp)
+ament_target_dependencies(battery rclcpp my_robot_interfaces)
 
 install(TARGETS
   cpp_node
@@ -47,7 +54,9 @@ install(TARGETS
   number_counter
   add_two_ints_server
   add_two_ints_client
-  add_two_ints_client_no_oop
+  hardware_status_publisher
+  led_panel
+  battery
   DESTINATION lib/${PROJECT_NAME}
 )
 

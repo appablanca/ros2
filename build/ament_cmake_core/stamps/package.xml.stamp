@@ -4,13 +4,14 @@
   <name>my_cpp_pkg</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="feyzieren@todo.todo">feyzieren</maintainer>
+  <maintainer email="ed@todo.todo">ed</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>rclcpp</depend>
   <depend>example_interfaces</depend>
+  <depend>my_robot_interfaces</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

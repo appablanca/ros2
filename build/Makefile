@@ -289,17 +289,43 @@ add_two_ints_client/fast:
 .PHONY : add_two_ints_client/fast
 
 #=============================================================================
-# Target rules for targets named add_two_ints_client_no_oop
+# Target rules for targets named hardware_status_publisher
 
 # Build rule for target.
-add_two_ints_client_no_oop: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 add_two_ints_client_no_oop
-.PHONY : add_two_ints_client_no_oop
+hardware_status_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hardware_status_publisher
+.PHONY : hardware_status_publisher
 
 # fast build rule for target.
-add_two_ints_client_no_oop/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/build
-.PHONY : add_two_ints_client_no_oop/fast
+hardware_status_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_status_publisher.dir/build.make CMakeFiles/hardware_status_publisher.dir/build
+.PHONY : hardware_status_publisher/fast
+
+#=============================================================================
+# Target rules for targets named led_panel
+
+# Build rule for target.
+led_panel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 led_panel
+.PHONY : led_panel
+
+# fast build rule for target.
+led_panel/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_panel.dir/build.make CMakeFiles/led_panel.dir/build
+.PHONY : led_panel/fast
+
+#=============================================================================
+# Target rules for targets named battery
+
+# Build rule for target.
+battery: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 battery
+.PHONY : battery
+
+# fast build rule for target.
+battery/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battery.dir/build.make CMakeFiles/battery.dir/build
+.PHONY : battery/fast
 
 src/add_two_ints_client.o: src/add_two_ints_client.cpp.o
 .PHONY : src/add_two_ints_client.o
@@ -325,30 +351,6 @@ src/add_two_ints_client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.s
 .PHONY : src/add_two_ints_client.cpp.s
 
-src/add_two_ints_client_no_oop.o: src/add_two_ints_client_no_oop.cpp.o
-.PHONY : src/add_two_ints_client_no_oop.o
-
-# target to build an object file
-src/add_two_ints_client_no_oop.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o
-.PHONY : src/add_two_ints_client_no_oop.cpp.o
-
-src/add_two_ints_client_no_oop.i: src/add_two_ints_client_no_oop.cpp.i
-.PHONY : src/add_two_ints_client_no_oop.i
-
-# target to preprocess a source file
-src/add_two_ints_client_no_oop.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.i
-.PHONY : src/add_two_ints_client_no_oop.cpp.i
-
-src/add_two_ints_client_no_oop.s: src/add_two_ints_client_no_oop.cpp.s
-.PHONY : src/add_two_ints_client_no_oop.s
-
-# target to generate assembly for a file
-src/add_two_ints_client_no_oop.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.s
-.PHONY : src/add_two_ints_client_no_oop.cpp.s
-
 src/add_two_ints_server.o: src/add_two_ints_server.cpp.o
 .PHONY : src/add_two_ints_server.o
 
@@ -372,6 +374,78 @@ src/add_two_ints_server.s: src/add_two_ints_server.cpp.s
 src/add_two_ints_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.s
 .PHONY : src/add_two_ints_server.cpp.s
+
+src/battery.o: src/battery.cpp.o
+.PHONY : src/battery.o
+
+# target to build an object file
+src/battery.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battery.dir/build.make CMakeFiles/battery.dir/src/battery.cpp.o
+.PHONY : src/battery.cpp.o
+
+src/battery.i: src/battery.cpp.i
+.PHONY : src/battery.i
+
+# target to preprocess a source file
+src/battery.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battery.dir/build.make CMakeFiles/battery.dir/src/battery.cpp.i
+.PHONY : src/battery.cpp.i
+
+src/battery.s: src/battery.cpp.s
+.PHONY : src/battery.s
+
+# target to generate assembly for a file
+src/battery.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battery.dir/build.make CMakeFiles/battery.dir/src/battery.cpp.s
+.PHONY : src/battery.cpp.s
+
+src/hw_status_publisher.o: src/hw_status_publisher.cpp.o
+.PHONY : src/hw_status_publisher.o
+
+# target to build an object file
+src/hw_status_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_status_publisher.dir/build.make CMakeFiles/hardware_status_publisher.dir/src/hw_status_publisher.cpp.o
+.PHONY : src/hw_status_publisher.cpp.o
+
+src/hw_status_publisher.i: src/hw_status_publisher.cpp.i
+.PHONY : src/hw_status_publisher.i
+
+# target to preprocess a source file
+src/hw_status_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_status_publisher.dir/build.make CMakeFiles/hardware_status_publisher.dir/src/hw_status_publisher.cpp.i
+.PHONY : src/hw_status_publisher.cpp.i
+
+src/hw_status_publisher.s: src/hw_status_publisher.cpp.s
+.PHONY : src/hw_status_publisher.s
+
+# target to generate assembly for a file
+src/hw_status_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_status_publisher.dir/build.make CMakeFiles/hardware_status_publisher.dir/src/hw_status_publisher.cpp.s
+.PHONY : src/hw_status_publisher.cpp.s
+
+src/led_panel.o: src/led_panel.cpp.o
+.PHONY : src/led_panel.o
+
+# target to build an object file
+src/led_panel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_panel.dir/build.make CMakeFiles/led_panel.dir/src/led_panel.cpp.o
+.PHONY : src/led_panel.cpp.o
+
+src/led_panel.i: src/led_panel.cpp.i
+.PHONY : src/led_panel.i
+
+# target to preprocess a source file
+src/led_panel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_panel.dir/build.make CMakeFiles/led_panel.dir/src/led_panel.cpp.i
+.PHONY : src/led_panel.cpp.i
+
+src/led_panel.s: src/led_panel.cpp.s
+.PHONY : src/led_panel.s
+
+# target to generate assembly for a file
+src/led_panel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/led_panel.dir/build.make CMakeFiles/led_panel.dir/src/led_panel.cpp.s
+.PHONY : src/led_panel.cpp.s
 
 src/my_first_node.o: src/my_first_node.cpp.o
 .PHONY : src/my_first_node.o
@@ -509,9 +583,11 @@ help:
 	@echo "... my_cpp_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... add_two_ints_client"
-	@echo "... add_two_ints_client_no_oop"
 	@echo "... add_two_ints_server"
+	@echo "... battery"
 	@echo "... cpp_node"
+	@echo "... hardware_status_publisher"
+	@echo "... led_panel"
 	@echo "... number_counter"
 	@echo "... number_publisher"
 	@echo "... robot_news_station"
@@ -519,12 +595,18 @@ help:
 	@echo "... src/add_two_ints_client.o"
 	@echo "... src/add_two_ints_client.i"
 	@echo "... src/add_two_ints_client.s"
-	@echo "... src/add_two_ints_client_no_oop.o"
-	@echo "... src/add_two_ints_client_no_oop.i"
-	@echo "... src/add_two_ints_client_no_oop.s"
 	@echo "... src/add_two_ints_server.o"
 	@echo "... src/add_two_ints_server.i"
 	@echo "... src/add_two_ints_server.s"
+	@echo "... src/battery.o"
+	@echo "... src/battery.i"
+	@echo "... src/battery.s"
+	@echo "... src/hw_status_publisher.o"
+	@echo "... src/hw_status_publisher.i"
+	@echo "... src/hw_status_publisher.s"
+	@echo "... src/led_panel.o"
+	@echo "... src/led_panel.i"
+	@echo "... src/led_panel.s"
 	@echo "... src/my_first_node.o"
 	@echo "... src/my_first_node.i"
 	@echo "... src/my_first_node.s"
