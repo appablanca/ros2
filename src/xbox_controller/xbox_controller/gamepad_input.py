@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
-from evdev import InputDevice, categorize, ecodes  # Import required classes from evdev
+from evdev import InputDevice, ecodes  # Import only required classes
 
 class GamepadNode(Node):
     def __init__(self):
@@ -22,8 +22,21 @@ def main():
 
     try:
         for event in device.read_loop():
-            if event.type in [ecodes.EV_ABS, ecodes.EV_KEY]:
-                node.publish_event(str(categorize(event)))
+            # Check for axis (joystick movement) or button events
+            if event.type == ecodes.EV_ABS:  # Axis (e.g., joystick movement)
+                axis_name = ecodes.ABS.get(event.code, f"Unknown Axis ({event.code})")
+                axis_value = event.value
+                message = f"Axis: {axis_name}, Value: {axis_value}"
+                node.publish_event(message)
+                print(message)
+
+            elif event.type == ecodes.EV_KEY:  # Buttons (e.g., A, B, X, Y)
+                button_name = ecodes.BTN.get(event.code, f"Unknown Button ({event.code})")
+                button_state = "Pressed" if event.value == 1 else "Released"
+                message = f"Button: {button_name}, States: {button_state}, Value: {event.value}"
+                node.publish_event(message)
+                print(message)
+
     except KeyboardInterrupt:
         pass
     finally:
