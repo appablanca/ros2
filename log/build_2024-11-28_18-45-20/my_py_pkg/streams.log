@@ -1,0 +1,31 @@
+[0.794s] Invoking command in '/home/feyzieren/ros2_ws/src/my_py_pkg': CMAKE_PREFIX_PATH=/home/feyzieren/ros2_ws/install/my_robot_interfaces:/home/feyzieren/ros2_ws/install/my_cpp_pkg PYTHONPATH=/home/feyzieren/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/feyzieren/ros2_ws/build/my_py_pkg/build install --record /home/feyzieren/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[1.073s] running egg_info
+[1.073s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[1.074s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[1.074s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[1.074s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[1.074s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[1.076s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.077s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.077s] running build
+[1.078s] running build_py
+[1.078s] copying my_py_pkg/number_publisher.py -> /home/feyzieren/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.078s] running install
+[1.079s] running install_lib
+[1.080s] copying /home/feyzieren/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/number_publisher.py -> /home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[1.080s] byte-compiling /home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/number_publisher.py to number_publisher.cpython-310.pyc
+[1.081s] running install_data
+[1.081s] running install_egg_info
+[1.083s] removing '/home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.083s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[1.084s] running install_scripts
+[1.107s] Installing add_two_ints_client script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.107s] Installing add_two_ints_server script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.107s] Installing hw_status_publisher script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.107s] Installing number_counter script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.108s] Installing number_publisher script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.108s] Installing py_node script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.108s] Installing robot_news_station script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.108s] Installing smartphone script to /home/feyzieren/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.108s] writing list of installed files to '/home/feyzieren/ros2_ws/build/my_py_pkg/install.log'
+[1.136s] Invoked command in '/home/feyzieren/ros2_ws/src/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/feyzieren/ros2_ws/install/my_robot_interfaces:/home/feyzieren/ros2_ws/install/my_cpp_pkg PYTHONPATH=/home/feyzieren/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/feyzieren/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/feyzieren/ros2_ws/build/my_py_pkg/build install --record /home/feyzieren/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data

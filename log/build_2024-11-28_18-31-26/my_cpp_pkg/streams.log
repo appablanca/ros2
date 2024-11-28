@@ -1,0 +1,26 @@
+[0.017s] Invoking command in '/home/feyzieren/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=/home/feyzieren/ros2_ws/install/my_robot_interfaces:/home/feyzieren/ros2_ws/install/my_cpp_pkg:/home/feyzieren/ros2_ws/install/xbox_controller:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/feyzieren/ros2_ws/build/my_cpp_pkg -- -j12 -l12
+[0.099s] [ 10%] [32mBuilding CXX object CMakeFiles/battery.dir/src/battery.cpp.o[0m
+[0.099s] [ 10%] [32mBuilding CXX object CMakeFiles/led_panel.dir/src/led_panel.cpp.o[0m
+[0.102s] [ 20%] Built target number_counter
+[0.104s] [ 30%] Built target number_publisher
+[0.105s] [ 40%] Built target smartphone
+[0.108s] [ 50%] Built target robot_news_station
+[0.109s] [ 60%] Built target add_two_ints_server
+[0.114s] [ 70%] Built target cpp_node
+[0.115s] [ 80%] Built target hardware_status_publisher
+[0.116s] [ 90%] Built target add_two_ints_client
+[0.404s] [01m[K/home/feyzieren/ros2_ws/src/my_cpp_pkg/src/led_panel.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kmy_robot_interfaces/msg/led_state_array.hpp: No such file or directory
+[0.404s]     2 | #include [01;31m[K"my_robot_interfaces/msg/led_state_array.hpp"[m[K
+[0.404s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.404s] compilation terminated.
+[0.407s] [01m[K/home/feyzieren/ros2_ws/src/my_cpp_pkg/src/battery.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kmy_robot_interfaces/srv/set_led.hpp: No such file or directory
+[0.407s]     2 | #include [01;31m[K"my_robot_interfaces/srv/set_led.hpp"[m[K
+[0.407s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.407s] compilation terminated.
+[0.408s] gmake[2]: *** [CMakeFiles/led_panel.dir/build.make:76: CMakeFiles/led_panel.dir/src/led_panel.cpp.o] Error 1
+[0.409s] gmake[1]: *** [CMakeFiles/Makefile2:363: CMakeFiles/led_panel.dir/all] Error 2
+[0.409s] gmake[1]: *** Waiting for unfinished jobs....
+[0.411s] gmake[2]: *** [CMakeFiles/battery.dir/build.make:76: CMakeFiles/battery.dir/src/battery.cpp.o] Error 1
+[0.412s] gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/battery.dir/all] Error 2
+[0.412s] gmake: *** [Makefile:146: all] Error 2
+[0.416s] Invoked command in '/home/feyzieren/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=/home/feyzieren/ros2_ws/install/my_robot_interfaces:/home/feyzieren/ros2_ws/install/my_cpp_pkg:/home/feyzieren/ros2_ws/install/xbox_controller:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/feyzieren/ros2_ws/build/my_cpp_pkg -- -j12 -l12

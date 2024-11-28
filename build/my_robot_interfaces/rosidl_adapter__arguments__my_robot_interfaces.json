@@ -1,6 +1,9 @@
 {
   "package_name": "my_robot_interfaces",
   "non_idl_tuples": [
-    "/home/feyzieren/ros2_ws/src/my_robot_interfaces:msg/HardwareStatus.msg"
+    "/home/feyzieren/ros2_ws/src/my_robot_interfaces:msg/HardwareStatus.msg",
+    "/home/feyzieren/ros2_ws/src/my_robot_interfaces:msg/LedStateArray.msg",
+    "/home/feyzieren/ros2_ws/src/my_robot_interfaces:srv/ComputeRectangleArea.srv",
+    "/home/feyzieren/ros2_ws/src/my_robot_interfaces:srv/SetLed.srv"
   ]
 }

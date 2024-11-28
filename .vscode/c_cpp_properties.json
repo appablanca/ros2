@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/opt/ros/humble/include/**",
-                "~/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/**"
+                "~/ros2_ws/install/my_robot_interfaces/include/**"
+               
                 
             ],
             "defines": [],

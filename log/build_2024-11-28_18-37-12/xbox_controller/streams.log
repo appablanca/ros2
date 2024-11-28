@@ -1,0 +1,37 @@
+[0.743s] Invoking command in '/home/feyzieren/ros2_ws/src/xbox_controller': PYTHONPATH=/home/feyzieren/ros2_ws/build/xbox_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/feyzieren/ros2_ws/install/xbox_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/xbox_controller build --build-base /home/feyzieren/ros2_ws/build/xbox_controller/build install --record /home/feyzieren/ros2_ws/build/xbox_controller/install.log --single-version-externally-managed install_data
+[1.028s] running egg_info
+[1.029s] creating ../../build/xbox_controller/xbox_controller.egg-info
+[1.029s] writing ../../build/xbox_controller/xbox_controller.egg-info/PKG-INFO
+[1.029s] writing dependency_links to ../../build/xbox_controller/xbox_controller.egg-info/dependency_links.txt
+[1.030s] writing entry points to ../../build/xbox_controller/xbox_controller.egg-info/entry_points.txt
+[1.030s] writing requirements to ../../build/xbox_controller/xbox_controller.egg-info/requires.txt
+[1.030s] writing top-level names to ../../build/xbox_controller/xbox_controller.egg-info/top_level.txt
+[1.030s] writing manifest file '../../build/xbox_controller/xbox_controller.egg-info/SOURCES.txt'
+[1.031s] reading manifest file '../../build/xbox_controller/xbox_controller.egg-info/SOURCES.txt'
+[1.032s] writing manifest file '../../build/xbox_controller/xbox_controller.egg-info/SOURCES.txt'
+[1.032s] running build
+[1.033s] running build_py
+[1.033s] creating /home/feyzieren/ros2_ws/build/xbox_controller/build
+[1.033s] creating /home/feyzieren/ros2_ws/build/xbox_controller/build/lib
+[1.033s] creating /home/feyzieren/ros2_ws/build/xbox_controller/build/lib/xbox_controller
+[1.033s] copying xbox_controller/gamepad_input.py -> /home/feyzieren/ros2_ws/build/xbox_controller/build/lib/xbox_controller
+[1.034s] copying xbox_controller/__init__.py -> /home/feyzieren/ros2_ws/build/xbox_controller/build/lib/xbox_controller
+[1.034s] running install
+[1.034s] running install_lib
+[1.034s] creating /home/feyzieren/ros2_ws/install/xbox_controller/lib/python3.10/site-packages/xbox_controller
+[1.035s] copying /home/feyzieren/ros2_ws/build/xbox_controller/build/lib/xbox_controller/gamepad_input.py -> /home/feyzieren/ros2_ws/install/xbox_controller/lib/python3.10/site-packages/xbox_controller
+[1.035s] copying /home/feyzieren/ros2_ws/build/xbox_controller/build/lib/xbox_controller/__init__.py -> /home/feyzieren/ros2_ws/install/xbox_controller/lib/python3.10/site-packages/xbox_controller
+[1.035s] byte-compiling /home/feyzieren/ros2_ws/install/xbox_controller/lib/python3.10/site-packages/xbox_controller/gamepad_input.py to gamepad_input.cpython-310.pyc
+[1.035s] byte-compiling /home/feyzieren/ros2_ws/install/xbox_controller/lib/python3.10/site-packages/xbox_controller/__init__.py to __init__.cpython-310.pyc
+[1.036s] running install_data
+[1.036s] creating /home/feyzieren/ros2_ws/install/xbox_controller/share/ament_index
+[1.036s] creating /home/feyzieren/ros2_ws/install/xbox_controller/share/ament_index/resource_index
+[1.036s] creating /home/feyzieren/ros2_ws/install/xbox_controller/share/ament_index/resource_index/packages
+[1.037s] copying resource/xbox_controller -> /home/feyzieren/ros2_ws/install/xbox_controller/share/ament_index/resource_index/packages
+[1.037s] copying package.xml -> /home/feyzieren/ros2_ws/install/xbox_controller/share/xbox_controller
+[1.037s] running install_egg_info
+[1.038s] Copying ../../build/xbox_controller/xbox_controller.egg-info to /home/feyzieren/ros2_ws/install/xbox_controller/lib/python3.10/site-packages/xbox_controller-0.0.0-py3.10.egg-info
+[1.039s] running install_scripts
+[1.061s] Installing gamepad_input script to /home/feyzieren/ros2_ws/install/xbox_controller/lib/xbox_controller
+[1.062s] writing list of installed files to '/home/feyzieren/ros2_ws/build/xbox_controller/install.log'
+[1.091s] Invoked command in '/home/feyzieren/ros2_ws/src/xbox_controller' returned '0': PYTHONPATH=/home/feyzieren/ros2_ws/build/xbox_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/feyzieren/ros2_ws/install/xbox_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/xbox_controller build --build-base /home/feyzieren/ros2_ws/build/xbox_controller/build install --record /home/feyzieren/ros2_ws/build/xbox_controller/install.log --single-version-externally-managed install_data

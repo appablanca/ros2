@@ -1,0 +1,43 @@
+[0.017s] Invoking command in '/home/feyzieren/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=/home/feyzieren/ros2_ws/install/my_robot_interfaces:/home/feyzieren/ros2_ws/install/my_cpp_pkg:/home/feyzieren/ros2_ws/install/xbox_controller:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/feyzieren/ros2_ws/build/my_cpp_pkg -- -j12 -l12
+[0.100s] [ 40%] Built target robot_news_station
+[0.101s] [ 40%] Built target number_publisher
+[0.101s] [ 40%] Built target smartphone
+[0.101s] [ 40%] Built target add_two_ints_server
+[0.101s] [ 50%] Built target cpp_node
+[0.102s] [ 60%] Built target hardware_status_publisher
+[0.102s] [ 70%] Built target number_counter
+[0.105s] [ 80%] Built target add_two_ints_client
+[0.107s] [ 95%] [32mBuilding CXX object CMakeFiles/led_panel.dir/src/led_panel.cpp.o[0m
+[0.107s] [ 95%] Built target battery
+[5.229s] [100%] [32m[1mLinking CXX executable led_panel[0m
+[5.491s] [100%] Built target led_panel
+[5.518s] Invoked command in '/home/feyzieren/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/feyzieren/ros2_ws/install/my_robot_interfaces:/home/feyzieren/ros2_ws/install/my_cpp_pkg:/home/feyzieren/ros2_ws/install/xbox_controller:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/feyzieren/ros2_ws/build/my_cpp_pkg -- -j12 -l12
+[5.521s] Invoking command in '/home/feyzieren/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=/home/feyzieren/ros2_ws/install/my_robot_interfaces:/home/feyzieren/ros2_ws/install/my_cpp_pkg:/home/feyzieren/ros2_ws/install/xbox_controller:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/feyzieren/ros2_ws/build/my_cpp_pkg
+[5.530s] -- Install configuration: ""
+[5.531s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[5.531s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station
+[5.531s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone
+[5.531s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_publisher
+[5.532s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter
+[5.532s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server
+[5.533s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client
+[5.533s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hardware_status_publisher
+[5.533s] -- Installing: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/led_panel
+[5.536s] -- Set runtime path of "/home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/led_panel" to ""
+[5.536s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/battery
+[5.537s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[5.537s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[5.537s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[5.538s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[5.538s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[5.538s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[5.538s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[5.538s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[5.539s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[5.539s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[5.540s] -- Installing: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[5.540s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[5.541s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[5.542s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[5.542s] -- Up-to-date: /home/feyzieren/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[5.543s] Invoked command in '/home/feyzieren/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/feyzieren/ros2_ws/install/my_robot_interfaces:/home/feyzieren/ros2_ws/install/my_cpp_pkg:/home/feyzieren/ros2_ws/install/xbox_controller:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/feyzieren/ros2_ws/build/my_cpp_pkg
