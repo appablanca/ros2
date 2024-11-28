@@ -1,3 +1,0 @@
-[console_scripts]
-gamepad_input = xbox_controller.gamepad_input:main
-
