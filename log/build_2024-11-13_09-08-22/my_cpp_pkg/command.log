@@ -1,1 +1,0 @@
-Invoking command in '/home/feyzieren/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/feyzieren/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/feyzieren/ros2_ws/build/my_cpp_pkg -- -j12 -l12
