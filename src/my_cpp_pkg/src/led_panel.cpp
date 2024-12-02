@@ -7,8 +7,13 @@ class LedPanelNode : public rclcpp::Node
 public:
     LedPanelNode() : Node("led_panel"), led_states_(3, 0)
     {
+        this->declare_parameter("led_states", std::vector<int64_t>{0, 0, 0});
+        led_states_ = this->get_parameter("led_states").as_integer_array();
+
         led_states_publisher_ =
             this->create_publisher<my_robot_interfaces::msg::LedStateArray>("led_states", 10);
+
+
         led_states_timer_ =
             this->create_wall_timer(std::chrono::seconds(4),
                                     std::bind(&LedPanelNode::publishLedStates, this));
