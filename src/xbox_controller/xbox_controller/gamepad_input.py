@@ -7,32 +7,35 @@ from evdev import InputDevice, ecodes, list_devices
 class XboxArmController(Node):
     def __init__(self, device_path: str):
         super().__init__('xbox_arm_controller')
-        self.trajectory_pub = self.create_publisher(JointTrajectory, '/joint_trajectory_controller/joint_trajectory', 10)
+        self.trajectory_pub = self.create_publisher(JointTrajectory, '/panda_arm_controller/joint_trajectory', 10)
 
         self.device_path = device_path
         self.device = self._initialize_device()
 
         self.joint_angles = {
-            'joint_1': 0.0,
-            'joint_2': 0.0,
-            'joint_3': 0.0,
-            'joint_4': 0.0,
-            'joint_5': 0.0,
-            'joint_6': 0.0,
+            'panda_joint1': 0.0,
+            'panda_joint2': 0.0,
+            'panda_joint3': 0.0,
+            'panda_joint4': 0.0,
+            'panda_joint5': 0.0,
+            'panda_joint6': 0.0,
+            'panda_joint7': 0.0,
         }
 
-        # Axis mapping to joints
         self.axis_joint_map = {
-            0: 'joint_1',  # Left stick X
-            1: 'joint_2',  # Left stick Y
-            3: 'joint_3',  # Right stick X
-            4: 'joint_4',  # Right stick Y
+            0: 'panda_joint1',  # Left stick X
+            1: 'panda_joint2',  # Left stick Y
+            3: 'panda_joint3',  # Right stick X
+            4: 'panda_joint4',  # Right stick Y
         }
 
-        # Button control for additional joints
         self.button_joint_map = {
-            317: ('joint_5', -1),  # L Stick Click
-            318: ('joint_5', 1),   # R Stick Click
+            317: ('panda_joint5', -1),  # L Stick Click
+            318: ('panda_joint5', 1),   # R Stick Click
+            308: ('panda_joint6', -1),  # L1
+            309: ('panda_joint6', 1),   # R1
+            310: ('panda_joint7', -1),  # L2
+            311: ('panda_joint7', 1),   # R2
         }
 
         self.step = 0.05  # radians per event
@@ -81,14 +84,14 @@ class XboxArmController(Node):
     def _handle_axis_motion(self, code, value):
         if code in self.axis_joint_map:
             joint = self.axis_joint_map[code]
-            normalized_value = value / 32768.0  # Normalize to [-1, 1]
-            if abs(value) < self.deadzone:  # Deadzone
+            normalized_value = value / 32768.0
+            if abs(value) < self.deadzone:
                 normalized_value = 0.0
             delta = normalized_value * self.step
             self.joint_angles[joint] += delta
-            self.joint_angles[joint] = max(min(self.joint_angles[joint], 3.14), -3.14)  # Limit to [-pi, pi]
+            self.joint_angles[joint] = max(min(self.joint_angles[joint], 3.14), -3.14)
             self.get_logger().info(f"{joint} moved to {self.joint_angles[joint]:.2f} rad")
-            self.publish_joint_trajectory()  # Continuous update
+            self.publish_joint_trajectory()
 
     def _handle_button_press(self, code):
         joint_action = self.button_joint_map.get(code)
